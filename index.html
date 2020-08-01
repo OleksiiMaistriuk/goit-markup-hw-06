@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -544,7 +545,17 @@
           </ul>
         </div>
         <div class="footer-right">
-          <b class="footer-right-title">подпишитесь на рассылку</b>
+          <label for="mail" class="footer-right-title"
+            >подпишитесь на рассылку</label
+          >
+          <div class="footer-right-form">
+            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <button type="submit">
+              подписаться<svg class="footer-right-svg">
+                <use href="./image/sprite.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
