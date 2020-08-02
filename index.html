@@ -559,15 +559,59 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-hidden">
+    <form data-modal class="backdrop is-hidden">
       <div class="modal">
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <button data-modal-close class="backdrop-close-button">
           <svg width="12" height="12">
             <use href="./image/sprite.svg#icon-vector-3"></use>
           </svg>
         </button>
+        <div class="form-field">
+          <label for="name">
+            <svg width="12" height="12">
+              <use href="./image/sprite.svg#icon-vector"></use>
+            </svg>
+            Имя
+          </label>
+          <input type="name" name="name" id="name" />
+        </div>
+
+        <div class="form-field">
+          <label for="tel">
+            <svg width="13" height="13">
+              <use href="./image/sprite.svg#icon-vector-1"></use>
+            </svg>
+            Телефон
+          </label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+
+        <div class="form-field">
+          <label for="email"
+            ><svg width="15" height="12">
+              <use href="./image/sprite.svg#icon-vector-2"></use>
+            </svg>
+            Почта
+          </label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-field-comment">
+          <label for="comment">коментарий</label>
+          <textarea name="comment" id="comment" rows="12"></textarea>
+        </div>
+
+        <div class="form-field-checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+          </label>
+        </div>
+        <div class="modal-send">
+          <button type="submit" class="modal-button-send">отправить</button>
+        </div>
       </div>
-    </div>
+    </form>
 
     <script src="./js/modal.js"></script>
   </body>
