@@ -559,6 +559,7 @@
         </div>
       </div>
     </footer>
+    <!-- форма заказть услугу -->
     <form data-modal class="backdrop is-hidden">
       <div class="modal">
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -574,7 +575,7 @@
             </svg>
             Имя
           </label>
-          <input type="name" name="name" id="name" />
+          <input type="name" name="name" id="name" required />
         </div>
 
         <div class="form-field">
@@ -584,7 +585,7 @@
             </svg>
             Телефон
           </label>
-          <input type="tel" name="tel" id="tel" />
+          <input type="tel" name="tel" id="tel" required />
         </div>
 
         <div class="form-field">
@@ -594,7 +595,7 @@
             </svg>
             Почта
           </label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </div>
         <div class="form-field-comment">
           <label for="comment">коментарий</label>
@@ -602,7 +603,7 @@
         </div>
 
         <div class="form-field-checkbox">
-          <input type="checkbox" name="checkbox" id="checkbox" />
+          <input type="checkbox" name="checkbox" id="checkbox" required />
           <label for="checkbox"
             >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
           </label>
