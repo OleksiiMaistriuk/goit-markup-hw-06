@@ -545,17 +545,16 @@
           </ul>
         </div>
         <div class="footer-right">
-          <label for="mail" class="footer-right-title"
-            >подпишитесь на рассылку</label
-          >
-          <div class="footer-right-form">
+          <b class="footer-right-title"> подпишитесь на рассылку</b>
+          <form class="footer-right-form">
+            <label for="mail"></label>
             <input type="email" name="mail" id="mail" placeholder="E-mail" />
             <button type="submit">
               подписаться<svg class="footer-right-svg">
                 <use href="./image/sprite.svg#icon-plane"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -569,37 +568,62 @@
           </svg>
         </button>
         <div class="form-field">
-          <label for="name">
-            <svg width="12" height="12">
-              <use href="./image/sprite.svg#icon-vector"></use>
-            </svg>
-            Имя
-          </label>
-          <input type="name" name="name" id="name" required />
+          <input
+            class="form-input"
+            type="name"
+            name="name"
+            id="name"
+            required
+            placeholder=" "
+          />
+
+          <label class="form-label" for="name">Имя</label>
+          <svg width="12" height="12" class="form-svg">
+            <use href="./image/sprite.svg#icon-vector"></use>
+          </svg>
         </div>
 
         <div class="form-field">
-          <label for="tel">
-            <svg width="13" height="13">
-              <use href="./image/sprite.svg#icon-vector-1"></use>
-            </svg>
-            Телефон
-          </label>
-          <input type="tel" name="tel" id="tel" required />
+          <input
+            class="form-input"
+            type="tel"
+            name="tel"
+            id="tel"
+            required
+            placeholder=" "
+          />
+
+          <label class="form-label" for="tel">Телефон</label>
+          <svg width="13" height="13" class="form-svg">
+            <use href="./image/sprite.svg#icon-vector-1"></use>
+          </svg>
+        </div>
+        <div class="form-field">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder=" "
+            required
+          />
+          <label class="form-label" for="email">Почта</label>
+          <svg width="15" height="12" class="form-svg">
+            <use href="./image/sprite.svg#icon-vector-2"></use>
+          </svg>
         </div>
 
-        <div class="form-field">
-          <label for="email"
-            ><svg width="15" height="12">
-              <use href="./image/sprite.svg#icon-vector-2"></use>
-            </svg>
-            Почта
-          </label>
-          <input type="email" name="email" id="email" required />
-        </div>
         <div class="form-field-comment">
-          <label for="comment">коментарий</label>
-          <textarea name="comment" id="comment" rows="12"></textarea>
+          <textarea
+            class="form-field-comment-texteria"
+            name="comment"
+            id="comment"
+            rows="12"
+            placeholder=" "
+          ></textarea>
+          <label class="form-field-comment-label" for="comment"
+            >Kоментарий
+          </label>
         </div>
 
         <div class="form-field-checkbox">
