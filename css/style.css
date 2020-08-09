@@ -97,7 +97,7 @@ input {
   }
 
   to {
-    transform: scale(100%);
+    transform: scale(1);
   }
 }
 
@@ -116,7 +116,7 @@ input {
   }
 
   to {
-    transform: scale(100%);
+    transform: scale(1);
   }
 }
 /* ---------------------------------------- */
