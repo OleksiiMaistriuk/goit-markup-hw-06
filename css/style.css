@@ -97,7 +97,7 @@ input {
   }
 
   to {
-    transform: scale (100%);
+    transform: scale(100%);
   }
 }
 
@@ -116,7 +116,7 @@ input {
   }
 
   to {
-    transform: scale (100%);
+    transform: scale(100%);
   }
 }
 /* ---------------------------------------- */
@@ -844,7 +844,7 @@ input {
   transform: translateY(-32px);
   color: var(--accent-color);
 }
-.form-field-checkbox {
+.form-field-checkbox label {
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 1.71;
