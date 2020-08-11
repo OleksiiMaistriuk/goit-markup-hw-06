@@ -35,6 +35,7 @@ body {
   animation-name: opacity;
   animation-duration: 2000ms;
   animation-timing-function: linear;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -65,7 +66,7 @@ textarea {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 .title {
   font-weight: 700;
@@ -211,7 +212,7 @@ input {
   padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1600px;
+
   max-width: 1600px;
   background-color: var(--text-white-theme-color);
   background-image: linear-gradient(
@@ -339,7 +340,7 @@ input {
 .team {
   margin-left: auto;
   margin-right: auto;
-  min-width: 1600px;
+  max-width: 1600px;
   background-color: var(--button-background-color);
   background-size: cover;
   background-position: center;
@@ -453,7 +454,7 @@ input {
   display: flex;
 }
 .footer {
-  min-width: 1600px;
+  max-width: 1600px;
   background-color: var(--footer-background-color);
   margin-right: auto;
   margin-left: auto;
@@ -696,10 +697,10 @@ input {
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
   padding: 40px 39px 40px 41px;
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
   background-color: var(--text-dark-theme-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -728,6 +729,7 @@ input {
   top: 8px;
   right: 8px;
   background-color: var(--text-dark-theme-color);
+  cursor: pointer;
 }
 
 .modal-button-send {
@@ -780,7 +782,7 @@ input {
 }
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-30px) translateX(-16px);
+  transform: translateY(-30px) translateX(-26px);
   color: var(--accent-color);
 }
 
